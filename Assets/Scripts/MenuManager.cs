@@ -12,18 +12,18 @@ public class MenuManager : MonoBehaviour
     {
         input.onValueChanged.AddListener(SetName);
 
-        //input.text = DataTransfer.instance.playerName;
+        input.text = DataTransfer.instance.playerName;
     }
 
     public void SetName(string name)
     {
-        //DataTransfer.instance.playerName = name;
+        DataTransfer.instance.playerName = name;
     }
 
     public void StartGame()
     {
         SceneManager.LoadScene(1);
-        //DataTransfer.instance.Save();
+        DataTransfer.instance.Save();
     }
     
     // Update is called once per frame
